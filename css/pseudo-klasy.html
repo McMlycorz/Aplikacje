@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudo-klasy</title>
+    
+    <style>
+        /* nie odwiedzona strona: */
+        a:link {
+            color: red;
+        }
+
+        /* odwiedzona strona: */
+        a:visited {
+            color: green;
+        }
+        
+        div p{
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        div:hover {
+            background-color: blue;
+        }
+        
+        input:focus {
+            background-color: yellow;
+        }
+        
+        h5:first-child {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+	<h1>Pseudo-klasa linków:</h1>
+    <a href="https://www.example.com">Przykład pseudo-klasy</a><br>
+    
+    <div>
+        <p>Najedź na mnie</p>
+    </div><br>
+    
+    <form>
+        First name: <input type="text" name="fname"><br>
+    </form>
+    
+    <div>
+        <h5>tekst</h5>
+        <h5>tekst</h5>
+    </div>
+    <div>
+        <h5>tekst</h5>
+        <h5>tekst</h5>
+    </div>
+</body>
+</html>
